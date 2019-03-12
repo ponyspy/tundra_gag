@@ -7,17 +7,16 @@ $(function() {
 		// maxTilt: 80,
 		// perspective: 300,
 		maxTilt: 30,
-		perspective: 200,
-		glare: false,
-		gyroscopeMinAngleX: -25,
-		gyroscopeMaxAngleX:  25,
-		gyroscopeMinAngleY: -25,
-		gyroscopeMaxAngleY:  25,
+		perspective: 150,
+		gyroscopeMinAngleX: -15,
+		gyroscopeMaxAngleX:  15,
+		gyroscopeMinAngleY: -15,
+		gyroscopeMaxAngleY:  15,
 		gyroscope: true
 	});
 
 	$(document).on('mouseup touchend', function(e) {
-		if ($(e.target).closest('.content_block').length) return;
+		if ($(e.target).closest('.content_block, .footer_block').length) return;
 
 		$('.logo.active').trigger('click');
 
