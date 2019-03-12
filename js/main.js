@@ -3,6 +3,7 @@ $(function() {
 
 	VanillaTilt.init(element, {
 		reset: true,
+		scale: 1.2,
 		// maxTilt: 80,
 		// perspective: 300,
 		maxTilt: 30,
