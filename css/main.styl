@@ -31,12 +31,18 @@ body
 	padding-left 20px
 	padding-right 20px
 	box-sizing border-box
+	// background-color red
 	.logo
 		display block
 		width 100%
 		max-width 500px
 		margin 0 auto
 		cursor pointer
+		transition .2s linear
+		filter: blur(0px)
+		&:hover
+			transition .2s linear
+			filter: blur(3px)
 
 .bg_block
 	position fixed
@@ -53,9 +59,9 @@ body
 		filter: blur(15px)
 
 .content_block
+	// background-color green
 	color white
 	display none
-	top 0
 	font 14pt/16pt 'Arial'
 	max-width 600px
 	margin 0 auto
@@ -76,9 +82,13 @@ body
 	text-align center
 	width 100%
 	a
-		filter: invert(100%)
 		margin-right 25px
 		display inline-block
+		transition .2s linear
+		filter: blur(0px) invert(100%)
+		&:hover
+			transition .2s linear
+			filter: blur(1px) invert(100%)
 		img
 			width 25px
 		&:last-child
