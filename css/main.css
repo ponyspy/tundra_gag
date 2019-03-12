@@ -31,13 +31,16 @@ body {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  cursor: pointer;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+}
+.header_block .logo.active {
   -webkit-filter: blur(0px);
           filter: blur(0px);
+  cursor: default;
 }
-.header_block .logo:hover {
+.header_block .logo.active:hover {
+  cursor: pointer;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-filter: blur(3px);
@@ -63,6 +66,8 @@ body {
           filter: blur(15px);
 }
 .content_block {
+  position: relative;
+  z-index: 99999;
   color: #fff;
   display: none;
   font: 14pt/16pt 'Arial';

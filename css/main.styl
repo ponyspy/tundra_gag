@@ -31,18 +31,19 @@ body
 	padding-left 20px
 	padding-right 20px
 	box-sizing border-box
-	// background-color red
 	.logo
 		display block
 		width 100%
 		max-width 500px
 		margin 0 auto
-		cursor pointer
 		transition .2s linear
-		filter: blur(0px)
-		&:hover
-			transition .2s linear
-			filter: blur(3px)
+		&.active
+			filter: blur(0px)
+			cursor default
+			&:hover
+				cursor pointer
+				transition .2s linear
+				filter: blur(3px)
 
 .bg_block
 	position fixed
@@ -59,7 +60,8 @@ body
 		filter: blur(15px)
 
 .content_block
-	// background-color green
+	position relative
+	z-index 99999
 	color white
 	display none
 	font 14pt/16pt 'Arial'
