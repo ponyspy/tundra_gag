@@ -3,9 +3,9 @@ $(function() {
 
 	VanillaTilt.init(element, {
 		reset: true,
-		scale: 1.2,
-		maxTilt: 60,
-		perspective: 500,
+		// scale: 1.2,
+		maxTilt: 80,
+		perspective: 300,
 		glare: false,
 		gyroscopeMinAngleX: -25,
 		gyroscopeMaxAngleX:  25,
