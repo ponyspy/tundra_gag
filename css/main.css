@@ -1,6 +1,9 @@
 @media screen and (max-height: 800px) {
+  .footer_block {
+    bottom: 35px !important;
+  }
   .footer_block.scroll {
-    padding-top: 80px;
+    padding-top: 60px;
     position: relative;
   }
   .bg_block {
