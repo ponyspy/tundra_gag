@@ -1,7 +1,6 @@
 $(function() {
 	var element = document.querySelector('.bg_block');
-
-	VanillaTilt.init(element, {
+	var opts = {
 		reset: true,
 		scale: 1.2,
 		// maxTilt: 80,
@@ -13,7 +12,9 @@ $(function() {
 		gyroscopeMinAngleY: 30,
 		gyroscopeMaxAngleY:  65,
 		gyroscope: true
-	});
+	}
+
+	VanillaTilt.init(element, opts);
 
 	$(document).on('mouseup touchend', function(e) {
 		if ($(e.target).closest('.content_block, .footer_block').length) return;
@@ -24,6 +25,8 @@ $(function() {
 	});
 
 	$(document).on('click', '.logo.active', function(e) {
+		VanillaTilt.init(element, opts);
+
 		$('.logo').removeClass('active');
 		$('.bg_block').removeClass('blur');
 		$('.content_block').removeClass('show');
@@ -31,6 +34,8 @@ $(function() {
 	});
 
 	$('.bg_block').on('click', function(e) {
+		element.vanillaTilt.destroy();
+
 		$('.logo').addClass('active');
 		$('.bg_block').addClass('blur');
 		$('.content_block').addClass('show');
