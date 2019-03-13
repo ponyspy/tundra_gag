@@ -10,8 +10,8 @@ $(function() {
 		perspective: 150,
 		gyroscopeMinAngleX: -15,
 		gyroscopeMaxAngleX:  15,
-		gyroscopeMinAngleY: -15,
-		gyroscopeMaxAngleY:  15,
+		gyroscopeMinAngleY: 30,
+		gyroscopeMaxAngleY:  65,
 		gyroscope: true
 	});
 
