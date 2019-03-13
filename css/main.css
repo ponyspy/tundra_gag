@@ -3,7 +3,7 @@
     bottom: 35px !important;
   }
   .content_block {
-    font: 20pt/22pt 'Arial' !important;
+    font: 20pt/22pt 'Arial Bold' !important;
   }
   .bg_block {
     top: 5% !important;
@@ -72,11 +72,8 @@ body {
   z-index: 99999;
   color: #fff;
   display: none;
-  font: 40pt/48pt 'Arial';
-  max-width: 800px;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  font: 40pt/42pt 'Arial Bold';
+  max-width: 720px;
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
