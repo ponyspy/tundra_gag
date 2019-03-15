@@ -1,10 +1,13 @@
+@font-face {
+  font-family: 'AB';
+  src: url("../fonts/ArialBold.woff");
+}
 @media screen and (max-height: 800px) {
   .footer_block {
     bottom: 35px !important;
   }
   .content_block {
-    font: 20pt/22pt 'Arial Bold' !important;
-    font-family: Arial-BoldMT !important;
+    font: 20pt/22pt 'AB' !important;
   }
   .content_block p {
     margin-bottom: 60px !important;
@@ -81,16 +84,10 @@ body {
   -webkit-filter: blur(15px);
           filter: blur(15px);
 }
-.debug {
-  position: fixed;
-  width: 120px;
-  height: 80px;
-  background-color: #fff;
-}
 .content_block {
   color: #fff;
   display: none;
-  font: 40pt/42pt 'Arial Bold';
+  font: 40pt/42pt 'AB';
   text-align: center;
   position: relative;
   width: 100%;
