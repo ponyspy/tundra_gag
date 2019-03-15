@@ -26,7 +26,7 @@ $(function() {
 		});
 	} else {
 		$(document).on('mouseup touchend', function(e) {
-			if ($(e.target).closest('.content_block, .footer_block').length) return;
+			if ($(e.target).closest('.content_inner').length) return;
 
 			$('.logo.active').trigger('click');
 
