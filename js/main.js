@@ -12,17 +12,27 @@ $(function() {
 		gyroscopeMinAngleY: 30,
 		gyroscopeMaxAngleY:  65,
 		gyroscope: true
-	}
+	};
 
 	VanillaTilt.init(element, opts);
 
-	$(document).on('mouseup touchend', function(e) {
-		if ($(e.target).closest('.content_block, .footer_block').length) return;
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		$('.content_block').swipe({
+			swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+				if ((direction == 'right' || direction == 'left')  && distance >= 150) {
+					$('.logo.active').trigger('click');
+				}
+			}
+		});
+	} else {
+		$(document).on('mouseup touchend', function(e) {
+			if ($(e.target).closest('.content_block, .footer_block').length) return;
 
-		$('.logo.active').trigger('click');
+			$('.logo.active').trigger('click');
 
-		e.stopPropagation();
-	});
+			e.stopPropagation();
+		});
+	}
 
 	$(document).on('click', '.logo.active', function(e) {
 		VanillaTilt.init(element, opts);
