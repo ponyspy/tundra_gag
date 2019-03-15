@@ -10,10 +10,10 @@
     margin-bottom: 60px !important;
   }
   .bg_block {
-    top: 5% !important;
-    left: 5% !important;
-    right: 5% !important;
-    bottom: 5% !important;
+    top: 15% !important;
+    left: 15% !important;
+    right: 15% !important;
+    bottom: 15% !important;
     max-width: 300px !important;
     max-height: 300px !important;
   }
@@ -76,8 +76,10 @@ body {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 3.4s;
-          animation-duration: 3.4s;
+  -webkit-animation-duration: 3.9s;
+          animation-duration: 3.9s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .bg_block.blur {
   cursor: default;
