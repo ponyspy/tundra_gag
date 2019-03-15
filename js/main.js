@@ -40,7 +40,7 @@ $(function() {
 		$('.logo').removeClass('active');
 		$('.bg_block').removeClass('blur');
 		$('.content_block').removeClass('show');
-		$('.footer_block').removeClass('scroll');
+		$('.header_block, .footer_block').removeClass('scroll');
 	});
 
 	$('.bg_block').on('click', function(e) {
@@ -49,6 +49,6 @@ $(function() {
 		$('.logo').addClass('active');
 		$('.bg_block').addClass('blur');
 		$('.content_block').addClass('show');
-		$('.footer_block').addClass('scroll');
+		$('.header_block, .footer_block').addClass('scroll');
 	});
 });
