@@ -21,6 +21,7 @@ $(function() {
 			swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 				if ((direction == 'right' || direction == 'left')  && distance >= 150) {
 					$('.logo.active').trigger('click');
+					$('.debug').text(distance);
 				}
 			}
 		});
