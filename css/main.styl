@@ -1,11 +1,15 @@
+@font-face {
+	font-family: 'AB';
+	src: url('../fonts/ArialBold.woff');
+}
+
 @media screen and (max-height: 800px) {
 	.footer_block {
 		bottom 35px!important
 	}
 
 	.content_block {
-		font 20pt/22pt 'Arial Bold'!important
-		font-family Arial-BoldMT!important
+		font 20pt/22pt 'AB'!important
 	}
 
 	.content_block p {
@@ -86,9 +90,8 @@ body
 	z-index 99999
 	color white
 	display none
-	font 40pt/42pt 'Arial Bold'
+	font 40pt/42pt 'AB'
 	max-width 720px
-	// hyphens auto
 	text-align center
 	margin 0 auto
 	margin-top 40px
@@ -108,7 +111,7 @@ body
 	text-align center
 	width 100%
 	&.scroll
-		padding-top 80px
+		padding-top 40px
 		position relative
 	a
 		margin-right 25px
