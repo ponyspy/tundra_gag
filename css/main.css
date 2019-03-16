@@ -71,6 +71,7 @@ body {
   max-height: 600px;
   -webkit-perspective: 1000;
           perspective: 1000;
+  -webkit-tap-highlight-color: transparent;
 }
 .bg_block .bg_pattern {
   width: 100%;
