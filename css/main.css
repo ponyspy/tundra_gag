@@ -111,6 +111,20 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.content_block img {
+  display: block;
+  max-width: 120px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.content_block img:hover {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
 .content_block p {
   margin: 0;
   padding: 0;
