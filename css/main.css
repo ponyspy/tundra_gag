@@ -2,15 +2,15 @@
   font-family: 'AB';
   src: url("../fonts/ArialBold.woff");
 }
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 800px) {
   .footer_block {
     bottom: 35px !important;
   }
   .content_block {
-    font: 20pt/22pt 'AB' !important;
+    font: 18pt/22pt 'AB' !important;
   }
   .content_block p {
-    margin-bottom: 60px !important;
+    margin-bottom: 40px !important;
   }
   .bg_block {
     top: 15% !important;
@@ -101,8 +101,8 @@ body {
   z-index: 99999;
   color: #fff;
   display: none;
-  font: 40pt/42pt 'AB';
-  max-width: 720px;
+  font: 30pt/36pt 'AB';
+  max-width: 620px;
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
