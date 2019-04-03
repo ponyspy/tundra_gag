@@ -1,13 +1,22 @@
 @font-face {
-  font-family: 'AB';
-  src: url("../fonts/ArialBold.woff");
+  font-family: 'DinPro M';
+  src: url("../fonts/dinpro-medium.otf");
+}
+@font-face {
+  font-family: 'DinPro MI';
+  src: url("../fonts/dinpro-medium-italic.otf");
+}
+@font-face {
+  font-family: 'DinPro B';
+  src: url("../fonts/dinpro-bold.otf");
+}
+@font-face {
+  font-family: 'DinPro BI';
+  src: url("../fonts/dinpro-bold-italic.otf");
 }
 @media screen and (max-width: 800px) {
   .footer_block {
     bottom: 35px !important;
-  }
-  .content_block {
-    font: 18pt/22pt 'AB' !important;
   }
   .content_block p {
     margin-bottom: 40px !important;
@@ -101,18 +110,45 @@ body {
   z-index: 99999;
   color: #fff;
   display: none;
-  font: 30pt/36pt 'AB';
-  max-width: 620px;
-  text-align: justify;
+  max-width: 780px;
   margin: 0 auto;
   margin-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: linear-gradient(30deg, #003da6, #fff, #003da6, #fff, #003da6, #fff);
-  -webkit-background-clip: text;
+}
+.content_block .content_section {
+  margin-bottom: 80px;
+}
+.content_block .content_section .invert {
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.content_block .content_section .section_title {
+  margin-bottom: 40px;
+  text-align: center;
+  font: 40pt/46pt 'DinPro BI';
+}
+.content_block .content_section .section_columns {
+  margin-bottom: 40px;
+  font-size: 0;
+  overflow: hidden;
+}
+.content_block .content_section .section_columns .col_inner {
+  margin-left: -20px;
+}
+.content_block .content_section .section_columns .column {
+  max-width: 360px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  font: 16pt/18pt 'DinPro M';
+}
+.content_block .content_section .section_desc {
+  font: 12pt/14pt 'DinPro M';
+  text-align: center;
 }
 .content_block img {
   display: block;
