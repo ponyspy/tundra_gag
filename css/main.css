@@ -130,14 +130,15 @@ body {
   margin-bottom: 40px;
   text-align: center;
   font: 40pt/46pt 'DinPro BI';
+  font-style: italic;
 }
 .content_block .content_section .section_columns {
   margin-bottom: 40px;
-  font-size: 0;
   overflow: hidden;
 }
 .content_block .content_section .section_columns .col_inner {
   margin-left: -20px;
+  font-size: 0;
 }
 .content_block .content_section .section_columns .column {
   max-width: 360px;
