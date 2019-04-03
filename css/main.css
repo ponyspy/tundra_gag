@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'DinPro M';
-  src: url("../fonts/dinpro-medium.otf");
+  font-family: 'DinPro R';
+  src: url("../fonts/dinpro-regular.otf");
 }
 @font-face {
-  font-family: 'DinPro MI';
-  src: url("../fonts/dinpro-medium-italic.otf");
+  font-family: 'DinPro RI';
+  src: url("../fonts/dinpro-regular-italic.otf");
 }
 @font-face {
   font-family: 'DinPro B';
@@ -147,10 +147,10 @@ body {
   padding-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 16pt/18pt 'DinPro M';
+  font: 16pt/18pt 'DinPro R';
 }
 .content_block .content_section .section_desc {
-  font: 12pt/14pt 'DinPro M';
+  font: 12pt/14pt 'DinPro R';
   text-align: center;
 }
 .content_block img {
