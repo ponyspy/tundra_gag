@@ -33,11 +33,27 @@
 		bottom 35px!important
 	}
 
-	// .content_block {
-	// 	font 18pt/22pt 'AB'!important
-	// }
+	.col_inner {
+		margin-left 0!important
+	}
 
-	.content_block p {
+	.column {
+		width 100%!important
+		max-width none!important
+		padding-left 0!important
+		margin-bottom 20px
+	}
+
+	.column:last-child {
+		margin-bottom 0!important
+	}
+
+	.section_title {
+		font-size 28pt!important
+		line-height 30pt!important
+	}
+
+	.logo {
 		margin-bottom 40px!important
 	}
 
@@ -146,6 +162,7 @@ body
 				margin-left -20px
 				font-size 0
 			.column
+				width 50%
 				max-width 380px
 				display inline-block
 				vertical-align top
@@ -165,9 +182,8 @@ body
 		&:hover
 			transition .2s linear
 			filter: blur(3px)
-	p
-		margin 0
-		padding 0
+	.logo
+		display block
 		margin-bottom 80px
 	&.show
 		display block
