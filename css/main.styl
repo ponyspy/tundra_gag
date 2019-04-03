@@ -1,6 +1,31 @@
 @font-face {
-	font-family: 'AB';
-	src: url('../fonts/ArialBold.woff');
+	font-family: 'DinPro R';
+	src: url('../fonts/dinpro-regular.otf');
+}
+
+@font-face {
+	font-family: 'DinPro RI';
+	src: url('../fonts/dinpro-regular-italic.otf');
+}
+
+// @font-face {
+// 	font-family: 'DinPro M';
+// 	src: url('../fonts/dinpro-medium.otf');
+// }
+
+// @font-face {
+// 	font-family: 'DinPro MI';
+// 	src: url('../fonts/dinpro-medium-italic.otf');
+// }
+
+@font-face {
+	font-family: 'DinPro B';
+	src: url('../fonts/dinpro-bold.otf');
+}
+
+@font-face {
+	font-family: 'DinPro BI';
+	src: url('../fonts/dinpro-bold-italic.otf');
 }
 
 @media screen and (max-width: 800px) {
@@ -10,10 +35,37 @@
 
 	.content_block {
 		padding-top 40px!important
-		font 18pt/22pt 'AB'!important
 	}
 
-	.content_block p {
+	.col_inner {
+		margin-left 0!important
+	}
+
+	.column {
+		width 100%!important
+		max-width none!important
+		padding-left 0!important
+		margin-bottom 20px
+	}
+
+	.column:last-child {
+		margin-bottom 0!important
+	}
+
+	.section_title {
+		font-size 28pt!important
+		line-height 30pt!important
+	}
+
+	.section_desc br {
+		content: ' '
+	}
+
+	.section_desc br:after {
+		content: ' '
+	}
+
+	.logo {
 		margin-bottom 40px!important
 	}
 
