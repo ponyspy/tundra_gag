@@ -55,6 +55,6 @@ $(function() {
 	$(window).on('scroll', function(e) {
 		var top = $(this).scrollTop();
 
-		$('.content_block').css('background-image', 'linear-gradient(' + (30 + top/20) + 'deg, #003DA6, #FFFFFF, #003DA6, #FFFFFF, #003DA6, #FFFFFF)')
+		$('.content_block').css('background-image', 'linear-gradient(' + (30 + top/20) + 'deg, #003DA6, #FFFFFF, #003DA6, #FFFFFF, #003DA6, #FFFFFF)');
 	});
 });
