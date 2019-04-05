@@ -197,10 +197,12 @@ body
 		margin-right 25px
 		display inline-block
 		transition .2s linear
-		filter: blur(0px) invert(100%)
-		&:hover
-			transition .2s linear
-			filter: blur(1px) invert(100%)
+		filter: blur(1px) invert(100%)
+		pointer-events none
+		// filter: blur(0px) invert(100%)
+		// &:hover
+		// 	transition .2s linear
+		// 	filter: blur(1px) invert(100%)
 		img
 			width 25px
 		&:last-child

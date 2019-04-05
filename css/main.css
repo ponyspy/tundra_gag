@@ -201,14 +201,9 @@ body {
   display: inline-block;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-  -webkit-filter: blur(0px) invert(100%);
-          filter: blur(0px) invert(100%);
-}
-.footer_block a:hover {
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
   -webkit-filter: blur(1px) invert(100%);
           filter: blur(1px) invert(100%);
+  pointer-events: none;
 }
 .footer_block a img {
   width: 25px;
