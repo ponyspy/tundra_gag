@@ -19,7 +19,8 @@
     bottom: 35px !important;
   }
   .content_block {
-    padding-top: 40px !important;
+    padding-top: 120px !important;
+    padding-bottom: 100px !important;
   }
   .col_inner {
     margin-left: 0 !important;
@@ -42,9 +43,6 @@
   }
   .section_desc br:after {
     content: ' ';
-  }
-  .logo {
-    margin-bottom: 40px !important;
   }
   .bg_block {
     top: 15% !important;
@@ -127,11 +125,15 @@ body {
   z-index: 9999;
   max-width: 760px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 180px;
+  padding-bottom: 140px;
   padding-left: 20px;
   padding-right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.content_block.show {
+  display: block;
 }
 .content_block .content_section {
   margin-bottom: 80px;
@@ -169,7 +171,7 @@ body {
   font: 10pt/12pt 'DinPro R';
   text-align: center;
 }
-.content_block img {
+.content_block .logo {
   display: block;
   max-width: 120px;
   margin: 0 auto;
@@ -177,18 +179,11 @@ body {
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-.content_block img:hover {
+.content_block .logo:hover {
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-filter: blur(3px);
           filter: blur(3px);
-}
-.content_block .logo {
-  display: block;
-  margin-bottom: 80px;
-}
-.content_block.show {
-  display: block;
 }
 .footer_block {
   position: fixed;

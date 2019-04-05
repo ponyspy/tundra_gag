@@ -34,7 +34,8 @@
 	}
 
 	.content_block {
-		padding-top 40px!important
+		padding-top 120px!important
+		padding-bottom 100px!important
 	}
 
 	.col_inner {
@@ -63,10 +64,6 @@
 
 	.section_desc br:after {
 		content: ' '
-	}
-
-	.logo {
-		margin-bottom 40px!important
 	}
 
 	.bg_block {
@@ -143,10 +140,13 @@ body
 	z-index 9999
 	max-width 760px
 	margin 0 auto
-	padding-top 80px
+	padding-top 180px // 80px
+	padding-bottom 140px // 80px
 	padding-left 20px
 	padding-right 20px
 	box-sizing border-box
+	&.show
+		display block
 	.content_section
 		margin-bottom 80px
 		.invert
@@ -175,7 +175,7 @@ body
 		.section_desc
 			font 10pt/12pt 'DinPro R'
 			text-align center
-	img
+	.logo
 		display block
 		max-width 120px
 		margin 0 auto
@@ -184,11 +184,6 @@ body
 		&:hover
 			transition .2s linear
 			filter: blur(3px)
-	.logo
-		display block
-		margin-bottom 80px
-	&.show
-		display block
 
 .footer_block
 	position fixed
