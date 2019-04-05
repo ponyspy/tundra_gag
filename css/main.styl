@@ -61,8 +61,8 @@
 		content: ' '
 	}
 
-	.logo {
-		margin-bottom 40px!important
+	.content_block {
+		padding-bottom 40px!important
 	}
 
 	.bg_block {
@@ -145,13 +145,16 @@ body
 	display none
 	max-width 760px
 	margin 0 auto
-	margin-top 40px
+	padding-top 40px
+	padding-bottom 80px
 	padding-left 20px
 	padding-right 20px
 	box-sizing border-box
 	// background-image: linear-gradient(30deg, #003DA6, #FFFFFF, #003DA6, #FFFFFF, #003DA6, #FFFFFF);
 	// -webkit-background-clip: text
 	// -webkit-text-fill-color: transparent
+	&.show
+		display block
 	.content_section
 		margin-bottom 80px
 		.invert
@@ -180,8 +183,7 @@ body
 		.section_desc
 			font 10pt/12pt 'DinPro R'
 			text-align center
-
-	img
+	.logo
 		display block
 		max-width 120px
 		margin 0 auto
@@ -190,11 +192,6 @@ body
 		&:hover
 			transition .2s linear
 			filter: blur(3px)
-	.logo
-		display block
-		margin-bottom 80px
-	&.show
-		display block
 
 .footer_block
 	position fixed
