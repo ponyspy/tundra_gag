@@ -1,5 +1,6 @@
 $(function() {
 	var element = document.querySelector('.bg_block');
+	var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 	var opts = {
 		reset: true,
 		scale: 1.2,
@@ -11,12 +12,12 @@ $(function() {
 		gyroscopeMaxAngleX:  15,
 		gyroscopeMinAngleY: 30,
 		gyroscopeMaxAngleY:  65,
-		gyroscope: true
+		gyroscope: is_mobile
 	};
 
 	VanillaTilt.init(element, opts);
 
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	if (is_mobile) {
 		$('.content_block').swipe({
 			swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 				if ((direction == 'right' || direction == 'left')  && distance >= 150) {
