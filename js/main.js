@@ -11,11 +11,11 @@ $(function() {
 	};
 
 	if (is_mobile) {
-		opts['gyroscopeMinAngleX'] = -15;
-		opts['gyroscopeMaxAngleX'] = 15;
-		opts['gyroscopeMinAngleY'] = 30;
-		opts['gyroscopeMaxAngleY'] = 65;
-		opts['gyroscope'] = true;
+		opts.gyroscopeMinAngleX = -15;
+		opts.gyroscopeMaxAngleX = 15;
+		opts.gyroscopeMinAngleY = 30;
+		opts.gyroscopeMaxAngleY = 65;
+		opts.gyroscope = true;
 	}
 
 	VanillaTilt.init(element, opts);
