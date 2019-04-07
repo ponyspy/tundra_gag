@@ -192,9 +192,8 @@ body {
   text-align: center;
   width: 100%;
 }
-.footer_block.scroll a {
-  -webkit-filter: blur(1px) invert(100%);
-          filter: blur(1px) invert(100%);
+.footer_block.scroll {
+  position: relative;
 }
 .footer_block a {
   margin-right: 25px;
