@@ -69,6 +69,9 @@ body {
 }
 .header_block.scroll {
   position: relative;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  pointer-events: none;
 }
 .header_block .logo {
   display: block;
@@ -77,18 +80,6 @@ body {
   margin: 0 auto;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-}
-.header_block .logo.active {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
-  cursor: default;
-}
-.header_block .logo.active:hover {
-  cursor: pointer;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
 }
 .bg_block {
   position: fixed;
@@ -207,16 +198,9 @@ body {
 .footer_block a {
   margin-right: 25px;
   display: inline-block;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-  -webkit-filter: blur(0px) invert(100%);
-          filter: blur(0px) invert(100%);
-}
-.footer_block a:hover {
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
   -webkit-filter: blur(1px) invert(100%);
           filter: blur(1px) invert(100%);
+  pointer-events: none;
 }
 .footer_block a img {
   width: 25px;
